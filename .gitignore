@@ -1,0 +1,6 @@
+# git ignore
+blog/secret.json
+blog/applications/users/migrations/*
+secret.json
+.DS_Store
+.env
