@@ -4,9 +4,9 @@ from .models import Category, Tag, Entry
 
 class EntryAdmin(admin.ModelAdmin):
     list_display = (
+        'title',
         'user',
         'category',
-        'title',
         'public',
         'slug',
     )
