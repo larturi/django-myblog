@@ -26,7 +26,6 @@ class Suscribers(TimeStampedModel):
     def __str__(self):
         return self.email
 
-
 class Contact(TimeStampedModel):
     full_name = models.CharField('Nombre Completo', max_length=100)
     email = models.EmailField()
