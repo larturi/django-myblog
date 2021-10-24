@@ -8,6 +8,7 @@ class EntryAdmin(admin.ModelAdmin):
         'user',
         'category',
         'public',
+        'show_in_home',
         'slug',
     )
 

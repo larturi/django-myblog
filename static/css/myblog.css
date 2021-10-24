@@ -25,3 +25,27 @@
     height: 120px;
     margin-right: 1em;
 }
+
+/* Custom */
+
+.imagen-center {
+    display: flex; 
+    align-items: center;
+}
+
+.imagen-center img {
+    padding: 20px;
+    width: 70% !important;
+}
+
+@media (max-width: 600px) {
+    .imagen-center {
+        display: flex; 
+        align-items: center;
+    }
+
+    .imagen-center img {
+        padding: 20px;
+        width: 70% !important;
+    }
+  }
