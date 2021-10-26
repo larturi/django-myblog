@@ -1,5 +1,5 @@
 <!-- head para PC -->
-{% extends "plantillas/base_plantilla.html" %}
+{% extends "users/base_users.html" %}
 {% load  static %}
 
 {% block content %}
@@ -26,7 +26,7 @@
                             </label>
                         </div>
                         <button type="submit" class="cell hollow button primary">Acceder</button>
-                        <a class="cell hollow button alert" href="#">Registrar</a>
+                        <a class="cell hollow button alert" href="{% url 'users_app:user-register' %}">Registrar</a>
                     </form>
                 </div>
             </div>
