@@ -83,7 +83,9 @@
                 <div class="card imagen-center">
                     <img src="{{ entry.image.url }}" style="width: 300px;">
                     <div class="card-section">
-                        <h4>{{ entry.title | truncatechars:50 }}</h4>
+                        <a href="{% url 'entrada_app:entry-detail' entry.id %}">
+                            <h4>{{ entry.title | truncatechars:50 }}</h4>
+                        </a>
                         <p>{{ entry.resume | truncatechars:100 }}</p>
                     </div>
                 </div>
