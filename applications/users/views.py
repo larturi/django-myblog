@@ -33,9 +33,9 @@ class UserRegisterView(FormView):
         #
         User.objects.create_user(
             form.cleaned_data['email'],
-            form.cleaned_data['full_name'],
             form.cleaned_data['password1'],
-            ocupation=form.cleaned_data['apellidos'],
+            full_name=form.cleaned_data['full_name'],
+            ocupation=form.cleaned_data['ocupation'],
             genero=form.cleaned_data['genero'],
             date_birth=form.cleaned_data['date_birth'],
         )
