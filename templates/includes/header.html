@@ -14,14 +14,21 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/entradas">Blog</a>
+                    <a href="{% url 'entrada_app:entradas-lista' %}">Blog</a>
                 </li>
-                <li>
-                    <a href="/login">Acceder</a>
-                </li>
-                <li>
-                    <a href="/register">Registro</a>
-                </li>
+
+                {% if user.is_authenticated %}
+                    <li>
+                        <a href="{% url 'users_app:user-logout' %}">Salir</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{% url 'users_app:user-login' %}">Acceder</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'users_app:user-register' %}">Registro</a>
+                    </li>
+                {% endif %}
                 
             </ul>
         </div>
