@@ -9,4 +9,14 @@ urlpatterns = [
         views.UserPageView.as_view(),
         name='perfil',
     ),  
+    path(
+        'add-favorito/<pk>', 
+        views.AddFavoritosView.as_view(),
+        name='add-favorito',
+    ),  
+    path(
+        'delete-favorito/<pk>', 
+        views.DeleteFavoritosView.as_view(),
+        name='delete-favorito',
+    ),  
 ]
