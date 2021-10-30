@@ -3,6 +3,10 @@
 
 {% load  static %}
 
+{% block title %}
+    {{ home.title }}
+{% endblock title %}
+
 {% block content %}
 
 {% include "includes/header.html" %}
@@ -46,9 +50,9 @@
     <!-- segundo bloque pantalla home -->
     <div class="grid-x align-center" style="margin-top: 1em;">
         <div class="cell small-12 large-12 margin-top-2 margin-bottom-3 callout secondary">
-            <h5>{{ banner_about.about_title }}</h5>
+            <h5>{{ home.about_title }}</h5>
             <p>
-                {{ banner_about.about_text }}
+                {{ home.about_text }}
             </p>
 
             <p>
