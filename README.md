@@ -1,2 +1,34 @@
-# myblog
-Proyecto Blog Personal Curso Django
+# Blog Personal
+Blog Personal con Django & Postgres
+
+# Get Started:
+
+Instalar dependencias:
+```
+pipenv install
+```
+
+Crear el .env
+```
+cp .env.dist .env
+
+# Modificar los valores si es necesario
+```
+
+Levantar Postgres con Docker
+```
+docker-compose up
+```
+
+Crear migraciones:
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+Ejecutar servidor local
+```
+python manage.py runserver --settings=empleados.settings.local
+```
+
+##### Made with ❤️ by Leandro Arturi
